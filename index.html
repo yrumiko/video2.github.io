@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.webrtc.ecl.ntt.com/skyway-4.4.5.js"></script> <!--SDKのダウンロード-->
+  </head>
+  <body>
+    <!--自分-->
+    <div>自分のPeerID: <span id="my-id"></span></div>
+    <video id="my-video" width="400px" autoplay muted playsinline></video>
+    <br>
+
+    <!--UI-->
+    <input type="text" placeholder="部屋ID" id="js-room-id">
+    <button id="js-join-trigger">接続</button>
+    <button id="js-leave-trigger">切断</button>
+    <br>
+
+    <!--相手-->
+    <div id="js-remote-streams"></div>
+
+    <!--スクリプト-->
+    <script src="./script.js"></script>
+  </body>
+</html>
